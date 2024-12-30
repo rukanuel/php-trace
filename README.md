@@ -12,4 +12,4 @@ For installation instructions, see [INSTALL.md](INSTALL.md).
 print_r(trace());
 print_r(trace("country"));
 ```
-For full returned arras see [return.json](return.json)
+For full returned array see [return.json](return.json)

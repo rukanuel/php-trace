@@ -58,7 +58,7 @@ rustc --version
 cargo --version
 ```
 
-### 2. Install Required libraries
+### 2. Install Required Libraries
 Appart from PHP, additional tools like `php-dev` and `clang` are required to build `php-trace`.
 
 #### On Linux (Ubuntu/Debian-based Distros):
@@ -96,7 +96,7 @@ cargo build --release
 ```
 This generates the library file in the `target/release` directory.
 
-### 4. Copy the built library to your PHP extensions directory
+### 4. Add the Extension to Your PHP
 Locate your PHP extensions directory. You can find the directory path by running:
 ```sh
 php -i | grep extension_dir

@@ -1,0 +1,27 @@
+[package]
+name = "php-trace"
+version = "1.0.0"
+edition = "2021"
+authors = ["Emanuel Rukavina <rukanuel@gmail.com>"]
+
+
+[lib]
+name = "php_trace"
+crate-type = ["cdylib"]
+
+[dependencies]
+ext-php-rs = "*"
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+strip = "debuginfo"
+panic = "abort"
+codegen-units = 1
+debug = false
+
+# For testing use:
+# php -d extension=./target/debug/libphp_trace.so example.php

@@ -1,0 +1,14 @@
+{
+    "hostname": "speed.cloudflare.com",
+    "clientIp": "ip_address",
+    "httpProtocol": "HTTP/1.1",
+    "asn": 6805,
+    "asOrganization": "O2 Deutschland",
+    "colo": "FRA",
+    "country": "DE",
+    "city": "Frankfurt am Main",
+    "region": "Hesse",
+    "postalCode": "60318",
+    "latitude": "50.12730",
+    "longitude": "8.68950"
+}
